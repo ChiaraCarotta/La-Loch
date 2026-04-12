@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #efe7dc;
   --bg-soft: #f8f3eb;
   --ink: #212720;
@@ -1047,7 +1047,7 @@ a {
 .home-page {
   background:
     linear-gradient(180deg, rgba(31, 40, 35, 0.015), rgba(31, 40, 35, 0.045)),
-    url("home-background.jpeg") center center / cover no-repeat fixed;
+    url("home-background-web.jpg") center center / cover no-repeat fixed;
 }
 
 .home-page::before {
@@ -1203,4 +1203,20 @@ a {
     min-height: 0;
     aspect-ratio: 4 / 5;
   }
+}
+
+.product-intro-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.product-intro-only .page-lead {
+  max-width: 68ch;
+}
+
+.story-intro-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.story-intro-only .page-lead {
+  max-width: 68ch;
 }
